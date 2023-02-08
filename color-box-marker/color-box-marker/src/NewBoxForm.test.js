@@ -7,3 +7,15 @@ it("should render without crashing", () => {
 })
 
 //snapshot test below
+it('should match snapshot', () => {
+    const {asFragment} = render(<NewBoxForm />)
+    expect(asFragment()).toMatchSnapshot()
+})
+
+it('should handle changes to each input value', () => {
+
+})
+
+it('should handle form submission', () => {
+    
+})

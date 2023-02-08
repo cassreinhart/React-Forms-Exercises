@@ -7,3 +7,11 @@ it("should render without crashing", () => {
 })
 
 //snapshot test below
+it('should match snapshot', () => {
+    const {asFragment} = render(<Box />)
+    expect(asFragment()).toMatchSnapshot()
+})
+
+it('should be removed when button is clicked', () => {
+    
+})
