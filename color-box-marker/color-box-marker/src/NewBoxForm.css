@@ -3,5 +3,21 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 4rem;
-    background-color: blue;
+    background-color: rgb(143, 143, 176);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 30px 0 0 ;
+}
+.add {
+    height: 2rem;
+    width: 5rem;
+    margin: 1rem 1rem 1rem 1rem;
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: rgb(23, 62, 99);
+    font-size: 1rem;
+}
+input {
+    margin: 10px;
 }

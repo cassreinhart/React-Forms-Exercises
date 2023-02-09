@@ -27,7 +27,7 @@ const NewBoxForm = ({addBox}) => {
   }
 
   return (
-    <div>
+    <div className='NewBoxForm'>
       <form onSubmit={handleSubmit}>
         <h4>Add a New Box</h4>
         <label htmlFor="backgroundColor">Box Color</label>
@@ -54,7 +54,7 @@ const NewBoxForm = ({addBox}) => {
           value={formData.width}
           onChange={handleChange} 
           />
-        <button>Add Box</button>
+        <button className='add'>Add Box</button>
       </form>
     </div>
   )

@@ -23,7 +23,8 @@ const BoxList = () => {
     return (
     <div className='BoxList'>
         <NewBoxForm addBox={addBox}/>
-        <div>
+        <div className='boxes'>
+            <h4>Boxes</h4>
             {boxes.map(({id, backgroundColor, width, height}) => <Box key={id} backgroundColor={backgroundColor} width={width} height={height} removeBox={removeBox}/>)}
         </div>
     </div>

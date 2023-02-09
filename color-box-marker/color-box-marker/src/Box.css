@@ -1,5 +1,20 @@
 .Box {
-    margin: 0 3em 0;
+    margin-right: 10px;
+    text-align: center;
+}
+.box-container {
     display: flex;
     flex-direction: row;
+    /* width: 50%; */
+    align-items: center; 
+}
+button {
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem 1rem 1rem 1rem;
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: rgb(23, 62, 99);
+    font-size: 1.5rem;
 }
