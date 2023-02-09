@@ -1,0 +1,12 @@
+.Todo {
+    margin: 2rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+li {
+    margin: .5rem
+}
+button {
+    height: 1.5rem;
+}

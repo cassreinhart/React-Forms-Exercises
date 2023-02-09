@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './Todo.css'
 
-const Todo = ({id, task}) => {
+const Todo = ({task, removeTodo, editTodo}) => {
   return (
     <div className='Todo'>
+        <button className='delete' onClick={removeTodo}>X</button>
         <li>{task}</li>
-        <button>X</button>
+        <button className='edit' onClick={editTodo}>Edit</button>
     </div>
   )
 }
