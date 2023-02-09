@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
+import './NewBoxForm.css'
 
 const NewBoxForm = ({addBox}) => {
   const initialState = {
-    backgroundColor: '',
+    backgroundColor: '#aabbcc',
     width: '',
     height: '',
   }
@@ -11,12 +12,14 @@ const NewBoxForm = ({addBox}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addBox({...formData})
+    console.log(formData)
+    addBox(formData)
     setFormData(initialState)
   }
 
   const handleChange = (e) => {
     const {name, value} = e.target;
+    
     setFormData(formData => ({
       ...formData, 
       [name]: value
@@ -26,6 +29,7 @@ const NewBoxForm = ({addBox}) => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
+        <h4>Add a New Box</h4>
         <label htmlFor="backgroundColor">Box Color</label>
         <input 
           type="color"
